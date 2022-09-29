@@ -5,7 +5,11 @@ import GlobalStyle from '../constants/GlobalStyle';
 export default function Page1({navigation}) {
 
     const navigateToPage2 = ()=>{
-        navigation.push("Page2");
+      let data = {
+        x: "Box1",
+        y: "y-value"
+      }
+      navigation.push("Page2", data);
     }
 
     return (
